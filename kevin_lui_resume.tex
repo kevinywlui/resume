@@ -6,16 +6,17 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+
+\usepackage[adobe-utopia]{mathdesign}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -74,9 +75,12 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\href{kevinlui.org}{\Large Kevin Lui}} & Email :
-    \href{mailto:kevinywlui@gmail.com}{kevinywlui@gmail.com}\\
-    \href{kevinlui.org}{kevinlui.org} & \\
+    \textbf{\Large{Kevin Lui Ph.D.}} 
+    & \faEnvelope: \url{kevinywlui@gmail.com} \\
+    \faGlobe: \url{kevinlui.org}
+    & \faGithub: \url{github.com/kevinywlui} \\
+    \faMapO: Seattle, WA &
+    Citizenship: USA
 \end{tabular*}
 
 
@@ -84,12 +88,15 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{University of Washington}{Seattle, WA}
-{Ph.D. in Mathematics}{Sep. 2014 -- Jun. 2019
-(expected)}
+{University of Washington, Seattle}{Seattle, WA}
+{Ph.D. in Mathematics specializing in Computational Number Theory under William
+Stein}{June 2019}
+\resumeSubheading
+{University of Washington, Seattle}{Seattle, WA}
+{Masters in Mathematics}{June 2018}
 \resumeSubheading
 {University of California, Santa Barbara}{Santa Barbara, CA}
-{Bachelors in Mathematics}{Sep. 2010 -- Jun. 2014}
+{Bachelors in Mathematics}{June 2014}
 \resumeSubHeadingListEnd
 
 
@@ -99,51 +106,102 @@
 
 \resumeSubheading
 {University of Washington}{Seattle, WA}
-{Researcher}{Sep. 2014 - Present}
+{Researcher}{Sep. 2014 - Jun. 2019}
 \resumeItemListStart
-\resumeItem{Thesis}
-{Explain research}
-\resumeItem{Isogeny class}
-{explain class}
-\resumeItem{Totally split Jacobians}
-{explain totally split}
+\resumeItem{Thesis Overview}
+{
+    Thesis research centered around creating and implementing algorithms for
+    computing invariants of modular abelian varieties. These are objects of
+    great number theoretic importance. The code was written using the Sagemath
+    Python library. Experiments were done using Jupyter notebooks. Tables of
+    related invariants were computed in parallel and stored in a PostgreSQL database.
+}
+\resumeItem{Link to thesis}{kevinlui.org/thesis}
 \resumeItemListEnd
+
+\resumeSubheading
+{Sagemath Open Source Project}{Online}
+{Developer}{Jun. 2016 - Present}
+\resumeItemListStart
+\resumeItem{Overview}
+{Primarily interested in improving the functionality of the modular abelian
+varieties, elliptic curves, and number field capabilities of Sagemath.
+Currently trying to merge code used for my thesis into the master branch.}
+\resumeItem{Link to contributions}{\url{kevinlui.org/sage_trac}}
+\resumeItem{Joint Math Meeting 2016 mini coding spring}
+{Profiled some code to help identify and fix a bug slowing down the formation
+of elliptic curve isogenies over large finite fields.}
+\resumeItem{Sage days 87}
+{Attended a workshop on $p$-adic number functionality in Sagemath. Worked on
+some elliptic curve tickets and helped get some beginners started on
+development.}
+\resumeItem{Google Summer of Code 2016}{Improved functionality of modular
+abelian varieties in Sagemath. Development was done over over Github:
+\url{github.com/williamstein/sage_modabvar} and has been merged into
+the Sagemath master branch.}
+\resumeItemListEnd
+
+\resumeSubheading
+{University of Washington Sage Seminar}{Seattle, WA}
+{Organizer}{Jun. 2019 - Present}
+\begin{itemize}
+    \item 
+        Mentoring a group of $\sim 8$ math graduate students towards
+        contributing to the Sagemath open source project.
+   \item
+        Primarily teaching the Sage development process which involves showing
+        how to build from source, collaborative development via git-trac
+        (\url{trac.sagemath.org}), and Sage developer conventions.
+    \item
+        Secondary role as Linux tech support and bringer of coffee.
+\end{itemize}
 
 \resumeSubheading
 {University of Washington}{Seattle, WA}
-{Teaching Assistant}{Sep. 2014 - Present}
+{Teaching Assistant/Instructor}{Sep. 2014 - Present (until Aug. 2019)}
 \resumeItemListStart
-\resumeItem{Linear algebra instructor}
-{ran own course}
-\resumeItem{Graduate Mentor}
-{wxml}
-\resumeItem{Teaching Assistant}
-{was teaching assistant}
+\resumeItem{Instructor - Linear Algebra}
+{5x introductory linear algebra, 1x advanced linear algebra, $\sim 50$
+students. Lectured, created and graded exams, and assigned grades according to
+departmental guidelines.}
+\resumeItem{Washington Experimental Mathematics Lab Graduate Mentor}
+{Helped 3 undergraduate students use Python to investigate tilings of the real
+plane.}
+\resumeItem{Teaching Assistant - Calculus}
+{Led twice a week quiz section for about 40 calculus students. Graded
+exams and held office hours.}
 \resumeItem{Grader}
-{Graded upper div}
+{Grader for the upper-division topology class. Graded weekly homework and held
+office hours.}
 \resumeItemListEnd
 
-
-\resumeSubheading
-{Sagemath}{Online}
-{Developer}{Jun. 2016 - Present}
-\resumeItemListStart
-\resumeItem{google summer of code}
-{was teaching assistant}
-\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
+\section{Programming Coursework}
+All taken as an undergraduate at UC Santa Barbara. Primarily used C++.
+  \resumeSubHeadingListStart
+    \item{
+            \textbf{Graduate: }{Logic}
+    }
+    \item{
+            \textbf{Upper Division: }{Data Structures and Algorithms, Formal
+            Languages and Automata, Introduction to Cryptography, Random Number
+        Generation in Cryptography}
+    }
+    \item{
+            \textbf{Lower Division: }{Introduction to Programming, Computer
+            Theorem Proving}
+
+            }
+    }
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Sage: Orders}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{More sage?}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{The latex thingy}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Caleb}{Automatically fill in bibtex entries using
+    \url{https://mathscinet.ams.org/mrlookup}}
   \resumeSubHeadingListEnd
 
 
@@ -151,9 +209,11 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Python, Sage, Latex, Bash}
-      \hfill
-      \textbf{Technologies}{: Linux, PostgreSQL, Git}
+            \textbf{Proficient: }{Python, Sage, Latex, Git}
+    }
+    \item{
+            \textbf{Some experience: }{PostgreSQL, SQLite, Bash, Zsh, GNU/Linux, C++, vim,
+            MATLAB}
     }
   \resumeSubHeadingListEnd
 
