@@ -13,6 +13,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{microtype}
 
 \usepackage[adobe-utopia]{mathdesign}
 \usepackage[T1]{fontenc}
@@ -91,9 +92,9 @@
 {University of Washington, Seattle}{Seattle, WA}
 {Ph.D. in Mathematics specializing in Computational Number Theory under William
 Stein}{June 2019}
-\resumeSubheading
-{University of Washington, Seattle}{Seattle, WA}
-{Masters in Mathematics}{June 2018}
+% \resumeSubheading
+% {University of Washington, Seattle}{Seattle, WA}
+% {Masters in Mathematics}{June 2018}
 \resumeSubheading
 {University of California, Santa Barbara}{Santa Barbara, CA}
 {Bachelors in Mathematics}{June 2014}
@@ -108,33 +109,32 @@ Stein}{June 2019}
 {University of Washington}{Seattle, WA}
 {Researcher}{Sep. 2014 - Jun. 2019}
 \resumeItemListStart
-\resumeItem{Thesis Overview}
+\resumeItem{Overview}
 {
     Thesis research centered around creating and implementing algorithms for
     computing invariants of modular abelian varieties. These are objects of
     great number theoretic importance. The code was written using the Sagemath
     Python library. Experiments were done using Jupyter notebooks. Tables of
-    related invariants were computed in parallel and stored in a PostgreSQL database.
+    related invariants were computed in parallel and stored in PostgreSQL
+    databases.
 }
 \resumeItem{Link to thesis}{kevinlui.org/thesis}
 \resumeItemListEnd
 
 \resumeSubheading
 {Sagemath Open Source Project}{Online}
-{Developer}{Jun. 2016 - Present}
+{Contributor}{Jun. 2016 - Present}
 \resumeItemListStart
 \resumeItem{Overview}
 {Primarily interested in improving the functionality of the modular abelian
-varieties, elliptic curves, and number field capabilities of Sagemath.
-Currently trying to merge code used for my thesis into the master branch.}
+varieties, elliptic curves, and number field capabilities of Sagemath.}
 \resumeItem{Link to contributions}{\url{kevinlui.org/sage_trac}}
-\resumeItem{Joint Math Meeting 2016 mini coding spring}
-{Profiled some code to help identify and fix a bug slowing down the formation
+\resumeItem{Joint Math Meeting 2016 mini coding sprint}
+{Profiled code to help identify and fix a bug slowing down the formation
 of elliptic curve isogenies over large finite fields.}
 \resumeItem{Sage days 87}
 {Attended a workshop on $p$-adic number functionality in Sagemath. Worked on
-some elliptic curve tickets and helped get some beginners started on
-development.}
+elliptic curve functionality.}
 \resumeItem{Google Summer of Code 2016}{Improved functionality of modular
 abelian varieties in Sagemath. Development was done over over Github:
 \url{github.com/williamstein/sage_modabvar} and has been merged into
@@ -146,7 +146,7 @@ the Sagemath master branch.}
 {Organizer}{Jun. 2019 - Present}
 \begin{itemize}
     \item 
-        Mentoring a group of $\sim 8$ math graduate students towards
+        Mentoring a group of $\sim 6$ math graduate students towards
         contributing to the Sagemath open source project.
    \item
         Primarily teaching the Sage development process which involves showing
@@ -156,64 +156,69 @@ the Sagemath master branch.}
         Secondary role as Linux tech support and bringer of coffee.
 \end{itemize}
 
-\resumeSubheading
-{University of Washington}{Seattle, WA}
-{Teaching Assistant/Instructor}{Sep. 2014 - Present (until Aug. 2019)}
-\resumeItemListStart
-\resumeItem{Instructor - Linear Algebra}
-{5x introductory linear algebra, 1x advanced linear algebra, $\sim 50$
-students. Lectured, created and graded exams, and assigned grades according to
-departmental guidelines.}
-\resumeItem{Washington Experimental Mathematics Lab Graduate Mentor}
-{Helped 3 undergraduate students use Python to investigate tilings of the real
-plane.}
-\resumeItem{Teaching Assistant - Calculus}
-{Led twice a week quiz section for about 40 calculus students. Graded
-exams and held office hours.}
-\resumeItem{Grader}
-{Grader for the upper-division topology class. Graded weekly homework and held
-office hours.}
-\resumeItemListEnd
+% \resumeSubheading
+% {University of Washington}{Seattle, WA}
+% {Teaching Assistant/Instructor}{Sep. 2014 - Present}
+% \resumeItemListStart
+% \resumeItem{Instructor - Linear Algebra}
+% {Primary instructor for introductory (5 times) and advanced (1 time) linear
+%     algebra classes. Created my own lectures and exams.
+% }
+% \resumeItem{Washington Experimental Mathematics Lab Graduate Mentor}
+% {Helped 3 undergraduate students use Python to investigate tilings of the real
+% plane.}
+% \resumeItem{Teaching Assistant - Calculus}
+% {Answered homework questions in biweekly quiz sections and office hours.}
+% \resumeItem{Grader}
+% {Grader for the upper-division topology class. Graded weekly homework and held
+% office hours.}
+% \resumeItemListEnd
 
 
 \resumeSubHeadingListEnd
 
-\section{Programming Coursework}
-All taken as an undergraduate at UC Santa Barbara. Primarily used C++.
-  \resumeSubHeadingListStart
-    \item{
-            \textbf{Graduate: }{Logic}
-    }
-    \item{
-            \textbf{Upper Division: }{Data Structures and Algorithms, Formal
-            Languages and Automata, Introduction to Cryptography, Random Number
-        Generation in Cryptography}
-    }
-    \item{
-            \textbf{Lower Division: }{Introduction to Programming, Computer
-            Theorem Proving}
+% \section{Programming Coursework}
+% All taken as an undergraduate at UC Santa Barbara. Primarily used C++.
+% \resumeSubHeadingListStart
+% {
+% \item{
+%         \textbf{Graduate: }{Logic}
+%     }
+% \item{
+%         \textbf{Upper Division: }{Data Structures and Algorithms, Formal
+%             Languages and Automata, Introduction to Cryptography, Random Number
+%         Generation in Cryptography}
+%     }
+% \item{
+%         \textbf{Lower Division: }{Introduction to Programming, Computer
+%         Theorem Proving}
 
-            }
-    }
-  \resumeSubHeadingListEnd
+%     }
+% }
+% \resumeSubHeadingListEnd
+
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Caleb}{Automatically fill in bibtex entries using
-    \url{https://mathscinet.ams.org/mrlookup}}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubItem{Links}{kevinlui.org/projects}
+\resumeSubItem{caleb}{Python package for parsing tex files and automatically
+retrieve missing bibtex entries using the \url{https://www.crossref.org/} API.}
+\resumeSubItem{Sagemath - isomorphism testing}{Implemented isomorphism testing of
+modular abelian varieties into the Sagemath Python library. Currently in the
+process of being merged.}
+\resumeSubHeadingListEnd
 
 
 % --------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-            \textbf{Proficient: }{Python, Sage, Latex, Git}
+            \textbf{Proficient: }{Python, Sagemath, Latex, Git}
     }
     \item{
-            \textbf{Some experience: }{PostgreSQL, SQLite, Bash, Zsh, GNU/Linux, C++, vim,
-            MATLAB}
+            \textbf{Some experience: }{PostgreSQL, SQLite, Bash, GNU/Linux,
+            C++, vim, MATLAB/Octave}
     }
   \resumeSubHeadingListEnd
 
