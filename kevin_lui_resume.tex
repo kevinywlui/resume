@@ -4,11 +4,11 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{xcolor}
-\definecolor{cBlue}{HTML}{364f6b}
-\definecolor{cRed}{HTML}{fc5185}
+\definecolor{cBlue}{HTML}{455d7a}
+\definecolor{cRed}{HTML}{e23e57}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -17,7 +17,7 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    urlcolor = cRed
+    urlcolor = cBlue
 }
 % \usepackage{fancyhdr}
 \usepackage{microtype}
@@ -47,7 +47,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \vspace{-4pt}\scshape\raggedright\large\color{cBlue}
+    \vspace{-4pt}\scshape\raggedright\large\color{cRed}
 }{}{0em}{}[\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -144,14 +144,28 @@ package, similar to scipy, suitable for research-level number theory
 computations.}
 \resumeItem{Link to
 contributions}{\url{https://kevinlui.org/pages/code\#sagemath}}
-\resumeItem{Google Summer of Code 2016}{Improved functionality of modular
-    abelian varieties in Sagemath. This work would eventually evolve into my
-    Ph.D. thesis work. Development was done over Github:
-    \url{https://github.com/williamstein/sage_modabvar} and has since been
-    merged into the Sagemath master branch.}
+% \resumeItem{Google Summer of Code 2016}{Improved functionality of modular
+%     abelian varieties in Sagemath. This work would eventually evolve into my
+%     Ph.D. thesis work. Development was done over Github:
+%     \url{https://github.com/williamstein/sage_modabvar} and has since been
+%     merged into the Sagemath master branch.}
 \resumeItem{Sage days 87}{Attended a workshop on $p$-adic number functionality
-in Sagemath. Worked on elliptic curve functionality.}
+in Sagemath. Worked on re-basing an old branch on elliptic curves.}
 \resumeItemListEnd
+
+\resumeSubheading
+{Google Summer of Code - Sagemath}{Online}
+{Student Developer}{Summer 2016}
+\resumeItemListStart
+\resumeItem{Overview}
+{Implemented algorithms related to modular abelian
+varieties in Python. This required translating algorithms found in research
+papers to something implementable within the Sagemath library.} 
+\resumeItem{Outcome}{This code has been merged into the master branch
+\url{https://trac.sagemath.org/ticket/21496} and has morphed into my Ph.D.
+thesis topic.}
+\resumeItemListEnd
+
 
 \resumeSubheading
 {University of Washington Sage Seminar}{Seattle, WA}
@@ -190,13 +204,9 @@ contribution.}
 
 \section{Programming Coursework}
 All taken as an undergraduate at UC Santa Barbara. Primarily used C++.
-\resumeSubHeadingListStart
-\item{
-        {Data Structures and Algorithms, Formal
-            Languages and Automata, Cryptography, Random Number
-        Generation, Computer Theorem Proving, Logic}
-    }
-\resumeSubHeadingListEnd
+
+$\bullet$ Data Structures and Algorithms, Formal
+            Languages and Automata, Cryptography, Computer Theorem Proving, Logic
 
 
 %-----------PROJECTS-----------------
@@ -219,7 +229,7 @@ process of being merged: \url{https://trac.sagemath.org/ticket/28275}}
     \item{
             \textbf{Proficient: }{Python, Sagemath, Latex, Git}
     }
-    \item{
+\item{\vspace{-0.15cm}
             \textbf{Prior experience: }{PostgreSQL, SQLite, Bash, GNU/Linux,
             C++, vim, MATLAB/Octave}
     }
