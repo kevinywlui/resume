@@ -6,12 +6,19 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{xcolor}
+\definecolor{cBlue}{HTML}{364f6b}
+\definecolor{cRed}{HTML}{fc5185}
+
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor = cRed
+}
 % \usepackage{fancyhdr}
 \usepackage{microtype}
 
@@ -40,8 +47,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    \vspace{-4pt}\scshape\raggedright\large\color{cBlue}
+}{}{0em}{}[\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -68,6 +75,8 @@
 
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,7 +126,7 @@ Stein}{June 2019}
     great number theoretic importance. The overarching theme is bring these
     abstract objects into a linear algebraic setting that is more suitable for
     computations.}
-\resumeItem{Techniques skills used}{
+\resumeItem{Technical skills used}{
     Code was written using the Sagemath Python library. Experiments were done
     using Jupyter notebooks. Tables of related invariants were computed in
     parallel and stored in PostgreSQL databases.
