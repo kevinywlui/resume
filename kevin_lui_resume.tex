@@ -104,13 +104,33 @@
 \end{tabular*}
 
 
+% --------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    % \item{
+    %         \textbf{Fluent in: }{Python, Git}
+    % }
+% \item{\vspace{-0.15cm}
+    %         \textbf{Prior projects in: }{SQL, Bash, C++, MATLAB, Cython}
+    % }
+  \item{Python, Git, SQL, Bash, C++, MATLAB, Cython}
+  \resumeSubHeadingListEnd
+
+\section{Applied Coursework}
+\resumeSubHeadingListStart
+\resumeSubItem{Instructor/TA/Grader}{Linear Algebra, Operation Research, Calculus}
+\resumeSubItem{Graduate}{Logic in CS, Game Theory}
+\resumeSubItem{Undergraduate}
+{Data Structures and Algorithms, Cryptography, Computer Theorem Proving,
+Probability, Statistics}
+\resumeSubHeadingListEnd
+
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of Washington, Seattle}{Seattle, WA}
-{Ph.D. in Mathematics specializing in Computational Number Theory under William
-Stein - 3.75 GPA}{June 2019}
+{Ph.D. in Mathematics specializing in Computational Number Theory - 3.75 GPA}{June 2019}
 % \resumeSubheading
 % {University of Washington, Seattle}{Seattle, WA}
 % {Masters in Mathematics}{June 2018}
@@ -118,18 +138,6 @@ Stein - 3.75 GPA}{June 2019}
 {University of California, Santa Barbara}{Santa Barbara, CA}
 {Bachelors in Mathematics - 3.8 GPA}{June 2014}
 \resumeSubHeadingListEnd
-
-% --------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-            \textbf{Fluent in: }{Python, Git, Sagemath, Latex, Linux as
-            a desktop/development environment}
-    }
-\item{\vspace{-0.15cm}
-            \textbf{Prior projects in: }{SQL, Bash, Zsh, C++, MATLAB, Cython}
-    }
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -141,15 +149,21 @@ Stein - 3.75 GPA}{June 2019}
 \resumeItemListStart
 \resumeItem{Overview}
 {
-    Thesis research centered around creating and implementing algorithms for
-    computing invariants of modular abelian varieties. I was able to create
-    algorithms for computing certain invariants where existing methods where
-    computationally infeasible or non-existent.
+    % Thesis research centered around creating and implementing algorithms for
+    % computing invariants of modular abelian varieties. I was able to create
+    % algorithms for computing certain invariants where existing methods where
+    % computationally infeasible or non-existent.
+    Thesis research centered around creating and implementing algorithms in
+    number theory. Created polynomial-time algorithms for computing invariant
+    where existing methods where computationally infeasible or non-existent.
 }
 \resumeItem{Technical skills used}{
-    Code was written using the Sagemath Python library. Experiments were done
-    using Jupyter notebooks. Tables of related invariants were computed and
-    stored in PostgreSQL databases.
+    % Code was written using the Sagemath Python library. Experiments were done
+    % using Jupyter notebooks. Tables of related invariants were computed and
+    % stored in PostgreSQL databases.
+    Implemented algorithms using thousands of lines of Python. Invariants were
+    computed in parallel on a 48-core server and stored in a PostgreSQL
+    database. 
 }
 \resumeItem{Link to thesis}{\url{https://kevinlui.org/pages/thesis}}
 \resumeItemListEnd
@@ -164,10 +178,10 @@ package, similar to scipy, suitable for research-level number theory
 computations. See \url{https://www.sagemath.org/}}
 \resumeItem{Contribution stats}{Authored 25 tickets, 19 of which has been
 accepted. Reviewed 10 tickets. Thousands of Python lines added.}
+\resumeItem{UW Sagemath Seminar}{Organized a seminar that helped 6 math
+graduate students make their first open-source contribution!}
 \resumeItem{Link to
 code contributions and code reviews}{\url{https://kevinlui.org/pages/code\#sagemath}}
-\resumeItem{Sage days 87 - workshop/coding spring}{Finished old tickets to
-improve functionality of elliptic curves.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -175,7 +189,10 @@ improve functionality of elliptic curves.}
 {Student Developer}{Summer 2016}
 \resumeItemListStart
 \resumeItem{Overview}
-{Implemented algorithms in Python supporting number theory research.}
+{
+    Implemented number theory algorithms in Python to help close
+    feature gap between Sagemath and its closed-source competitor MAGMA.
+}
 \resumeItem{Outcome}{This code has been merged into the master branch
 \url{https://trac.sagemath.org/ticket/21496} and is the foundation for my Ph.D.
 thesis work.}
@@ -193,33 +210,9 @@ paper. Worked closely with faculty mentor to develop the model.}
 \url{https://www.sciencedirect.com/science/article/pii/S0165011413003308}}
 \resumeItemListEnd
 
-\resumeSubheading
-{University of Washington Sage Seminar}{Seattle, WA}
-{Organizer}{Summer 2019}
-\resumeItemListStart
-\resumeItem{Overview}{Mentored a group of math graduate students towards
-contributing to the Sagemath open source project. We had 8 meetings lasting
-1-2 hours.}
-\resumeItem{Role}{Taught members the Sagemath development process which
-includes developing in a Linux environment.}
-\resumeItem{Outcome}{Six attendees have made their first open source code
-contribution!}
-\resumeItemListEnd
-
-
 
 \resumeSubHeadingListEnd
 
-\section{Applied Coursework}
-\resumeSubHeadingListStart
-\resumeSubItem{Instructor/TA/Grader}{Linear Algebra, Operation Research,
-Topology, Calculus}
-\resumeSubItem{Graduate}{Logic in CS, Game Theory}
-\resumeSubItem{Undergraduate}
-{Data Structures and Algorithms, Cryptography, Computer Theorem Proving,
-Probability, Statistics}
-
-\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Select Projects}
@@ -229,12 +222,12 @@ Probability, Statistics}
 automatically retrieving bibliographic information from publicly available
 online sources. Used travis for CI, pytest for testing, and poetry for
 dependency management. See \url{https://github.com/kevinywlui/caleb}}
-\resumeSubItem{Sagemath -- isomorphism testing}{Implemented isomorphism testing of
-modular abelian varieties into the Sagemath Python library. Currently in the
-process of being merged. See \url{https://trac.sagemath.org/ticket/28275}}
-% \resumeSubItem{zlong\_alert.zsh}{Zsh plugin for alerting you upon the
-% completion of a long-running command. See
-% \url{https://github.com/kevinywlui/zlong_alert.zsh}}
+% \resumeSubItem{Sagemath -- isomorphism testing}{Implemented isomorphism testing of
+% modular abelian varieties into the Sagemath Python library. Currently in the
+% process of being merged. See \url{https://trac.sagemath.org/ticket/28275}}
+\resumeSubItem{zlong\_alert.zsh}{Zsh plugin for alerting you upon the
+completion of a long-running command. See
+\url{https://github.com/kevinywlui/zlong_alert.zsh}}
 
 \resumeSubHeadingListEnd
 
